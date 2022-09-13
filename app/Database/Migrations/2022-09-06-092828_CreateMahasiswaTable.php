@@ -41,6 +41,6 @@ class CreteMahasiswaTable extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('mahasiswa');
+        $this->forge->dropTable('blog');
     }
 }
