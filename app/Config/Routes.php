@@ -38,6 +38,10 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/mahasiswa','MahasiswaController::index');
 $routes->get('/create','MahasiswaController::create');
+$routes->post('/store','MahasiswaController::store');
+$routes->get('/edit/(:num)','MahasiswaController::edit/$1');
+$routes->post('/update/(:num)','MahasiswaController::update/$1');
+$routes->delete('/delete/(:num)','MahasiswaController::delete/$1');
 $routes->get('/index','pages::index');
 $routes->get('(:any)', 'Pages::view/$1');
 

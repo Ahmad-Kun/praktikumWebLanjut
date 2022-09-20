@@ -1,4 +1,4 @@
-<form>
+<form action="/store" method="post">
   <div class="form-group">
     <label for="npm">NPM</label>
     <input type="text" name="npm" class="form-control" id="npm" >
@@ -11,5 +11,5 @@
     <label for="alamat">Alamat</label>
     <input type="text" name="alamat" class="form-control" id="alamat">
   </div>
-  <button type="submit" class="btn btn-primary">Tambah Data</button>
+  <button type="submit" class="btn btn-primary mt-2">Tambah Data</button>
 </form>
