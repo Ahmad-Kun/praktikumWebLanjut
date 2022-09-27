@@ -12,9 +12,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="/assets/AdminLte/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/assets/AdminLTE/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/AdminLte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/assets/AdminLTE/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/assets/AdminLTE/plugins/summernote/summernote-bs4.min.css">
 </head>
 <body class="hold-transition layout-top-nav">
 <div class="wrapper">
@@ -23,7 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
       <a href="" class="navbar-brand">
-        <img src="/assets/AdminLte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="/assets/AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Web Lanjut</span>
       </a>
 
@@ -35,10 +36,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="index3.html" class="nav-link">Home</a>
+            <a href="/home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/mahasiswa" class="nav-link">Mahasiswa</a>
           </li>
         </ul>
 
@@ -159,7 +163,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"> <?= esc($title) ?></h1>
+            <h1 class="m-0"><?= esc($title) ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -196,9 +200,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Praktikum Web Lanjut
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2022 
-        <!-- <a href="https://adminlte.io"></a>. -->
-    </strong> All rights reserved.
+    <strong>Copyright &copy; 2022 </strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
@@ -206,12 +208,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="/assets/AdminLte/plugins/jquery/jquery.min.js"></script>
+<script src="/assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="/assets/AdminLte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="/assets/AdminLte/dist/js/adminlte.min.js"></script>
+<script src="/assets/AdminLTE/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/assets/AdminLte/dist/js/demo.js"></script>
+<script src="/assets/AdminLTE/dist/js/demo.js"></script>
+<script src="/assets/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+<script>
+    $(function(){
+        $('#deskripsi'.summernote())
+    })
+</script>
 </body>
 </html>
