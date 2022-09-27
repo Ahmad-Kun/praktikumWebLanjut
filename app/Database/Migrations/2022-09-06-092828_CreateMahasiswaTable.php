@@ -26,7 +26,10 @@ class CreteMahasiswaTable extends Migration
             'alamat' => [
                 'type' => 'TEXT',
             ],
-            'created_at' => [
+            'deskripsi' => [
+                'type' => 'TEXT',
+            ]
+            ,'created_at' => [
                 'type' => 'DATETIME',
                 null => true,
             ],
